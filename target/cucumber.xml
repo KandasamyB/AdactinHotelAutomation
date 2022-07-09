@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="13" time="0.03788">
+    <testcase classname="verifying Adactinhotel Login Details" name="Verifying Adactinhotel Login details with Valid Credential" time="0.01049">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel Login Details" name="Verifying Adactinhotel Login details with Valid Credential 2" time="0.001159">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should login with Enter Key "NirmalKumarNatesan","Nirmalhari@1"...passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel Login Details" name="Verifying Adactinhotel Login details with InValid Credential" time="0.001031">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumar", "Nirmalhari"....................passed
+Then User should verify after login get error message contains "verifing contains message Invalid Login details or Your Password might have expired.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel SearchHotel Details" name="Verifying Adactinhotel SearchHotel details with Valid  Credential" time="0.002248">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should  Search the Hotel after Sucessfully Login with "Melbourne","Hotel Cornice","Double","2 - Two","21-06-2022","22-06-2022","2 - Two"and"3 - Three".passed
+Then User should after verify successfully search message with "Select Hotel".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel SearchHotel Details" name="Verifying Adactinhotel SearchHotel details with Mandatory Valid Credential" time="0.002058">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should Search the Hotel after Sucessfully Login with Mandatory details "Melbourne","2 - Two","21-06-2022","22-06-2022"and"2 - Two".passed
+Then User should after verify successfully search message with "Select Hotel".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel SearchHotel Details" name="Verifying Adactinhotel SearchHotel details invalid date Credential" time="0.003058">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should Search the Hotel after Sucessfully Login  with Invalid date "Melbourne","Hotel Cornice","Double","2 - Two","21-06-2023","22-06-2022","2 - Two"and"3 - Three".passed
+Then User should after verify  search get Error message  "CheckIn Date shall be before than Check-Out Date" ,"Check-Out Date shall be after than Check-In Date".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel SearchHotel Details" name="Verifying Adactinhotel SearchHotel details with  Valid location alone" time="0.00169">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should Search the Hotel after Sucessfully Login with "Melbourne" alone.passed
+Then User should after verify successfully search message with "Select Hotel".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel SelectHotel Details" name="Verifying Adactinhotel SelectHotel details with Valid  Credential" time="0.002458">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should  Search the Hotel after Sucessfully Login with "Melbourne","Hotel Cornice","Double","2 - Two","21-06-2022","22-06-2022","2 - Two"and"3 - Three".passed
+Then User should after verify successfully search message with "Select Hotel".passed
+And User should Select the Hotel and continue After successfully search.....passed
+Then User should after verify successfully select hotel get message "Book A Hotel".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel SelectHotel Details" name="Verifying Adactinhotel SelectHotel details with InValid  Credential" time="0.002306">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should  Search the Hotel after Sucessfully Login with "Melbourne","Hotel Cornice","Double","2 - Two","21-06-2022","22-06-2022","2 - Two"and"3 - Three".passed
+Then User should after verify successfully search message with "Select Hotel".passed
+And User should without Select the Hotel and continue After successfully search.passed
+Then User should  verify after  continue get Error message "Please Select a Hotel".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel BookHotel Details" name="Verifying Adactinhotel BookHotel details with Valid  Credential" time="0.004528">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should  Search the Hotel after Sucessfully Login with "Melbourne","Hotel Cornice","Double","2 - Two","21-06-2022","22-06-2022","2 - Two"and"3 - Three".passed
+Then User should after verify successfully search message with "Select Hotel".passed
+And User should Select the Hotel and continue After successfully search.....passed
+Then User should after verify successfully select hotel get message "Book A Hotel".passed
+And User should Book the Hotel after successfully select hotel  using "Kandasamy","Bala","1/16,sattur" and save the generated orderId.passed
+Then User should verify after Sucessfully Book hotel get message "Booking Confirmation".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel BookHotel Details" name="Verifying Adactinhotel BookHotel details with Valid  Credential 2" time="0.003757">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should  Search the Hotel after Sucessfully Login with "Melbourne","Hotel Cornice","Double","2 - Two","21-06-2022","22-06-2022","2 - Two"and"3 - Three".passed
+Then User should after verify successfully search message with "Select Hotel".passed
+And User should Select the Hotel and continue After successfully search.....passed
+Then User should after verify successfully select hotel get message "Book A Hotel".passed
+And User Should Book the Hotel after successfully without filling details...passed
+Then User should after verify Book hotel get error message "Please Enter your First Name","Please Enter you Last Name","Please Enter you Last Name","Please Enter your 16 Digit Credit Card Number","Please Select your Credit Card Type","Please Select your Credit Card Expiry Month"and"  Please Enter your Credit Card CVV Number".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel Cancel Details" name="Verifying Adactinhotel cancelpage details with Valid  Credential" time="0.001985">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should  Search the Hotel after Sucessfully Login with "Melbourne","Hotel Cornice","Double","2 - Two","21-06-2022","22-06-2022","2 - Two"and"3 - Three".passed
+Then User should after verify successfully search message with "Select Hotel".passed
+And User should Select the Hotel and continue After successfully search.....passed
+Then User should after verify successfully select hotel get message "Book A Hotel".passed
+And User should Book the Hotel after successfully select hotel  using "Kandasamy","Bala","1/16,sattur" and save the generated orderId.passed
+Then User should verify after Sucessfully Book hotel get message "Booking Confirmation".passed
+And User should cancel generated order id after booking confirmation........passed
+Then User should verify cancel message after cancelling "The booking has been cancelled.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="verifying Adactinhotel Cancel Details" name="Verifying Adactinhotel Cancelpage details with Valid Credential" time="0.001112">
+        <system-out><![CDATA[Given User is on the Adactinhotel Page......................................passed
+When User should Login  with "NirmalKumarNatesan", "Nirmalhari@1"...........passed
+Then User should verify successfully login message "Hello NirmalkumarNatesan!".passed
+And User should cancel existing order "O1347USDD7" after sucessfully login..passed
+Then User should verify cancel message after cancelling "The booking has been cancelled.".passed
+]]></system-out>
+    </testcase>
+</testsuite>
